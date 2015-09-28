@@ -8,23 +8,29 @@ body {
   font-size: 18px;
   font-weight: lighter;
   line-height: 1.8;
-  color: white;
+  color: #55AFE4;
   text-align: center;
   height: 100vh;
 
 }
 
 header {
-  height: 90px;
+  height: 120px;
   background: #55AFE4;
-}
-
-nav {
-  float: right;
+  border-bottom: 1px solid white;
+  color: white;
 }
 
 .intro {
-  float: left;
+  position: relative;
+  padding: 15px 0;
+
+}
+
+nav {
+  position: absolute;
+  top: 40px;
+  right: 20px;
 }
 
 section {
@@ -36,12 +42,13 @@ section {
   border: 1px solid white;
   padding: 30px;
   border-radius: 3px;
-  background: #55AFE4;
+  background: #ffffff;
 }
 
 nav img {
   width: 40px;
 }
+
 nav a {
   text-decoration: none;
 }
@@ -52,7 +59,7 @@ nav a {
 
 h1 {
   font-family: 'Amatic SC', sans-serif;
-  font-size: 100px;
+  font-size: 80px;
   line-height: 0.8;
 }
 
@@ -69,7 +76,7 @@ input {
   margin: 5px auto;
   width: 80%;
   background: white;
-  border: 1px solid white;
+  border: 1px solid #55AFE4;
   text-align: center;
   color: #55AFE4;
   border-radius: 3px;
@@ -95,6 +102,6 @@ input {
 input[type="submit"] {
   cursor: pointer;
   margin-bottom: 20px;
-  background: transparent;
+  background: #55AFE4;
   color: white;
 }
