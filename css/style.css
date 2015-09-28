@@ -16,10 +16,15 @@ body {
 
 header {
   height: 90px;
+  background: #55AFE4;
 }
 
 nav {
   float: right;
+}
+
+.intro {
+  float: left;
 }
 
 section {
@@ -29,7 +34,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid white;
-  padding: 60px;
+  padding: 30px;
   border-radius: 3px;
   background: #55AFE4;
 }
