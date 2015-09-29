@@ -14,14 +14,12 @@ body {
 }
 
 header {
-  height: 100%;
-}
-
-.intro {
   /*margin: 0 auto;*/
   position: absolute;
   top: 50%;
   left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border: 1px solid white;
   padding: 60px;
@@ -29,15 +27,19 @@ header {
   background: #55AFE4;
 }
 
-.intro img {
+
+header img {
   width: 40px;
 }
-.intro a {
+
+header a {
   text-decoration: none;
 }
 
 .instagram img {
   width: 35px;
+  margin: 0 0 2px 5px;
+
 }
 
 h1 {
@@ -55,6 +57,9 @@ p {
   margin: 20px;
 }
 
+label {
+  display:block;
+}
 input {
   margin: 5px auto;
   width: 80%;
@@ -87,4 +92,93 @@ input[type="submit"] {
   margin-bottom: 20px;
   background: transparent;
   color: white;
+}
+
+@media screen and (max-width: 1111px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    width: 65%;
+    padding: 50px 20px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  h1 {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    line-height: 1.3;
+  }
+
+  header {
+    width: 80%;
+    padding: 15px 10px;
+  }
+
+  header img {
+    width: 30px;
+  }
+
+  .instagram img {
+    width: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  header {
+    width: 90%;
+  }
+
+}
+
+/**
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+  body {
+    height: 1024px;
+  }
+}
+
+/**
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+  body {
+    height: 768px;
+  }
+}
+
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
+@media screen and (device-aspect-ratio: 40/71) {
+  body {
+    height: 500px;
+  }
 }
